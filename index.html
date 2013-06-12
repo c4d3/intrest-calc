@@ -14,19 +14,19 @@
     <th>Loan Balance, Cumulative Equity, and Interest Payments</th></tr>
 
     <tr><td>Amount of the loan ($):</td>
-    <td><input id="amount" onchange="calculate();"></td>
+    <td><input id="amount"></td>
     <td rowspan=8>
     <canvas id="graph" width="400" height="250"></canvas></td></tr>
 
     <tr><td>Annual interest (%):</td>
-    <td><input id="apr" onchange="calculate();"></td></tr>
+    <td><input id="apr"></td></tr>
 
     <tr><td>Repayment period (years):</td>
-    <td><input id="years" onchange="calculate();"></td>
+    <td><input id="years"></td>
     <tr><td>Zipcode (to find lenders):</td>
-    <td><input id="zipcode" onchange="calculate();"></td>
+    <td><input id="zipcode"></td>
     <tr><th>Approximate Payments:</th>
-    <td><button onclick="calculate();">Calculate</button></td></tr>
+    <td><button>Calculate</button></td></tr>
 
     <tr><td>Monthly payment:</td>
     <td>$<span class="output" id="payment"></span></td></tr>
@@ -39,6 +39,5 @@
     <div id="lenders"></div></td></tr>
   </table>
   <script src="js/intrestcalc.js"></script>
-  
 </body>
 </html>
