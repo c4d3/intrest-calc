@@ -82,6 +82,14 @@ window.onload = function(){
   		inputs[i].attachEvent("change",calculate,false);
   	}
   }
+  // Do the same for the button
+  var btn = document.getElementsByTagName("button");
+  if(!btn) console.log("Can't find button!");
+  if(btn[0].addEventListener){
+    btn[0].addEventListener("click",calculate,false);
+  }else if(btn[0].attachEvent){
+    btn[0].attachEvent("click",calculate,false);
+  }
 };
 
 // Pass the user's input to a server-side script chich can (in theory) return
